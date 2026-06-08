@@ -6,12 +6,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-
 public class HomeController {
 
     @GetMapping("/")
-    public String home(Model model, @RequestParam String nombre) {
-        model.addAttribute("nombre", nombre.toUpperCase());
+    public String home(Model modelo, @RequestParam String nombre) {
+        modelo.addAttribute("nombre", nombre.toUpperCase());
         return "home";
     }
 }
