@@ -8,6 +8,8 @@
 </head>
 <body style="background: #150D48;color: #fff;font-family: Arial;padding: 2rem;">
 
+    <!-- fragments/header.html -->
+    <div th:replace="fragments header :: menu"></div>
     <h1>Hola,<span th:text="${nombre}"></span>!</h1>
     <p>Mi primera aplicacion Spring Boot esta corriendo.</p>
 
